@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 public class ChuckNorrisRandomQuoteImpl implements ChuckNorrisRandomQuote {
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public ChuckNorrisRandomQuoteImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public ChuckNorrisRandomQuoteImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
